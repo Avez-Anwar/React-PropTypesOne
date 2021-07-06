@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
 class Student extends React.Component {
   render() {
@@ -14,6 +14,12 @@ class Student extends React.Component {
     );
   }
 }
+
+Student.defaultProps = {
+  name: "Peter",
+  roll: 23,
+  class: 10
+};
 
 Student.propTypes = {
   name: PropTypes.string,
